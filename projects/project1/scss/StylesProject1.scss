@@ -1,0 +1,15 @@
+.bg-primary-secondary-gradient {
+  background: linear-gradient(
+    to right,
+    #972882,
+    #393186
+  ); /* Adjust colors as needed */
+}
+
+.bg-secondary-primary-gradient {
+  background: linear-gradient(
+    to right,
+    #393186,
+    #972882
+  ); /* Adjust colors as needed */
+}

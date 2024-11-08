@@ -1,0 +1,41 @@
+{
+  "name": "adityararsite",
+  "version": "1.0.0",
+  "description": "A real estate site",
+  "main": "index.js",
+  "scripts": {
+    "_": "--------------------HOME------------------------",
+    "sass:buildHome": "sass --no-source-map src/scss:src/css",
+    "sass:watchHome": "sass --no-source-map --watch src/scss:src/css",
+    "__": "-------------------------------------------------",
+    "": "---------------------BLOG----------------------------",
+    "sass:buildBlog": "sass --no-source-map blogs/scss:blogs/css",
+    "sass:watchBlog": "sass --no-source-map --watch blogs/scss:blogs/css",
+    "___": "-------------------------------------------------",
+    "-": "--------------------PROJECT1----------------------------",
+    "sass:buildProject1": "sass --no-source-map ./projects/project1/scss:./projects/project1/css",
+    "sass:watchProject1": "sass --no-source-map --watch ./projects/project1/scss:./projects/project1/css",
+    "____": "-------------------------------------------------",
+    "--": "-------------------PROJECT2----------------------------",
+    "sass:buildProject2": "sass --no-source-map ./projects/project2/scss:./projects/project2/css",
+    "sass:watchProject2": "sass --no-source-map --watch ./projects/project2/scss:./projects/project2/css",
+    "_____": "-------------------------------------------------",
+    "--": "-------------------PROJECT3----------------------------",
+    "sass:buildProject3": "sass --no-source-map ./projects/project3/scss:./projects/project3/css",
+    "sass:watchProject3": "sass --no-source-map --watch ./projects/project3/scss:./projects/project3/css",
+    "_____": "-------------------------------------------------",
+    "---": "------------------OVERALL-----------------------------",
+    "sass:build": "npm run sass:buildHome && npm run sass:buildBlog && npm run sass:buildProject1 && npm run sass:buildProject2 && && npm run sass:buildProject3 ",
+    "sass:watch": "concurrently \"npm run sass:watchHome\" \"npm run sass:watchBlog\" \"npm run sass:watchProject1\" \"npm run sass:watchProject2\"  \"npm run sass:watchProject3\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "bootstrap": "^5.3.3",
+    "sass": "^1.80.6"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
